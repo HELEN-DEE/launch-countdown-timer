@@ -13,7 +13,7 @@
     /* neutral */
     --white: hsl(0, 0%, 100%);
     --dark-desaturated-blue: hsl(236, 21%, 26%);
-    --very-dark-blue: hsl(235, 16%, 14%);
+    --very-dark-blue: hsl(235, 15%, 14%);
     --very-dark-black-blue: hsl(234, 17%, 12%);
 }
 
@@ -28,7 +28,7 @@ body {
 
 .main-section{
     text-align: center;
-    margin: 8% auto;
+    margin: 5% auto;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -60,17 +60,25 @@ body {
 
 }
 
+
+
 .bg-blue-container h1{
-    background-color: var(--dark-desaturated-blue);
-    padding: 1.2rem 1rem;
+    /* background-color: var(--dark-desaturated-blue); */
+    background: linear-gradient(0deg, rgba(52,54,80,1) 50%, rgba(48,50,69,1) 50%);
+    padding: 1rem 0.8rem;
     margin: 2rem 0;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
+/* .corner {
+    border: 6px solid black;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+} */
+
 .footer-img img{
-/* position: fixed;
-bottom: 0;
-left: 0; */
 width: 100%;
 height: 100%;
 }
@@ -101,13 +109,16 @@ height: 100%;
 }
 .attribution a { color: hsl(228, 45%, 44%); }
 
-@media screen and (max-width: 768px) {
-    .main-section {
-        margin: 8% auto;
-    }
+@media screen and (max-width: 700px) {
+
 
     .time-section {
         gap: 1rem;
+        margin: 0 auto;
+        width: 90%;
+    }
+    .header-text{
+        font: 1rem;
     }
     
     .time-section h1 {
@@ -116,18 +127,16 @@ height: 100%;
 
     .time-section h4 {
         font-size: 0.7rem;
+
     }
-
-
-
-    /* .bg-blue-container h1 {
-        padding: 1rem 0.7rem;
-    } */
+    .bg-blue-container h1{
+        padding: 1rem 0.5rem;
+    }
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 400px) {
     .bg-blue-container h1{
-        padding: 1rem 1rem;
+        padding: 0.8rem ;
     } 
 
     .main-section {
@@ -137,6 +146,8 @@ height: 100%;
     .time-section {
         display: grid;
         grid-template-columns: 1fr 1fr ;
+        margin: 0 auto;
+        width: 80%;
     }
 
     .time-section h1 {
