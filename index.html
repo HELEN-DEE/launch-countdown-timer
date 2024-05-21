@@ -21,53 +21,87 @@
     <h1>We're launching soon</h1>
   </div>
 
-<div class="time-section flex-al-jc">
-  <!-- days -->
-  <div class="day-section">
-    <div class="day-container bg-blue-container">
-      <h1 id="days">00</h1>
-    </div>
-    <h4>Days</h4>
-  </div>
-  <!-- hours -->
-  <div class="hour-section ">
-    <div class="hour-container bg-blue-container">
-      <h1 id="hours">00</h1>
-    </div>
-    <h4>Hours</h4>
-  </div>
-  <!-- minutes -->
-  <div class="minute-section">
-    <div class="minute-container bg-blue-container">
-      <h1 id="minutes">00</h1>
-    </div>
-    <h4>Minutes</h4>
-  </div>
-<!-- seconds -->
-  <div class="second-section">
-    <div class="seconds-container bg-blue-container">
-      <span class="corner left"></span>
-      <span class="corner right"></span>
-    <h1 id="seconds">00</h1>
-      
-    </div>
-    <h4>Seconds</h4>
-  </div>
-</div>
+<!-- <div class="time-section flex-al-jc"> -->
+  <main>
+    <section class="counter-container">
+      <!-- Days -->
+      <div class="flip-card-container" data-type="days">
+        <div class="flip-inner-content days" data-before="00" data-after="01">
+          <div class="divider">
+            <span></span>
+            <span></span>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-top">00</div>
+            <div class="flip-card-bottom">01</div>
+          </div>
+        </div>
+      </div>
 
-</section>
+      <!-- Hours -->
+      <div class="flip-card-container" data-type="hours">
+        <div
+          class="flip-inner-content hours"
+          data-before="00"
+          data-after="01"
+        >
+          <div class="divider">
+            <span></span>
+            <span></span>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-top">00</div>
+            <div class="flip-card-bottom">01</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Minutes -->
+      <div class="flip-card-container" data-type="minutes">
+        <div class="flip-inner-content minutes" data-before="00" data-after="01">
+          <div class="divider">
+            <span></span>
+            <span></span>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-top">00</div>
+            <div class="flip-card-bottom">01</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Seconds -->
+      <div class="flip-card-container" data-type="seconds">
+        <div class="flip-inner-content seconds" data-before="00" data-after="01">
+          <div class="divider">
+            <span></span>
+            <span></span>
+          </div>
+          <div class="flip-card">
+            <div class="flip-card-top">00</div>
+            <div class="flip-card-bottom">01</div>
+          </div>
+        </div>
+    </section>
+  </main>
+
+<!-- </section> -->
 
 
   <section class="footer-img">
-    
+    <div class="social-icons flex-al-jc">
+      <span><img src="images/icon-facebook.svg" alt="icon-facebook"></span>
+      <span><img src="images/icon-pinterest.svg" alt="icon-pinterest"></span>
+      <span><img src="images/icon-instagram.svg" alt="icon-instagram"></span>
+    </div>
     <div class="pattern-hill">
       <img class="fixed" src="images/pattern-hills.svg" alt="pattern-hill">
     </div>
-  </section>
-    <div class="attribution flex-al-jc">
+    <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">HELEN DEE</a>.
   </div>
+  </section>
 
   <script src="script.js"></script>
 </body>
