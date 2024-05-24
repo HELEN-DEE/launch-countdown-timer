@@ -30,9 +30,21 @@ body {
 }
 
 a {
-  color: var(--soft-red)
+  color: hsl(228, 45%, 44%);
 }
 
+.hills {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.hills img {
+  width: 100%;
+}
 
 main {
   width: 50%;
@@ -253,7 +265,7 @@ main {
   transform: translate(50%, -50%);
 }
 
-/* Added this part too */
+
 /* Social Icon Styles */
 .social-icons {
   display: flex;
@@ -269,10 +281,12 @@ footer {
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  z-index: 100;
 }
 
 .attribution {
   text-align: center;
+  font-size: 0.8rem !important;
 }
 
 /* Media Queries For Mobile Screen */
@@ -285,6 +299,15 @@ footer {
   }
   main {
     width: 100%;
+  }
+
+  .hills img {
+    width: 300vw;
+  }
+
+  .social-icons span img {
+    width: 20px;
+    height: 20px;
   }
 
   .counter-container {
