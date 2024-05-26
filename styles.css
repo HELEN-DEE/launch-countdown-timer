@@ -293,6 +293,7 @@ footer {
 @media screen and (max-width: 767px) {
   body {
     padding: 0 10px;
+    overflow: hidden;
   }
   h1 {
     font-size: 0.8rem;
